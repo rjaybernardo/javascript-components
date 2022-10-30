@@ -1,6 +1,10 @@
-const navToggle = document.querySelector(".nav-toggle");
-const links = document.querySelector(".links");
+const modalBtn = document.querySelector(".modal-btn");
+const modal = document.querySelector(".modal-overlay");
+const closeBtn = document.querySelector(".close-btn");
 
-navToggle.addEventListener("click", function () {
-  links.classList.toggle("show-links");
+modalBtn.addEventListener("click", function () {
+  modal.classList.add("open-modal");
+});
+closeBtn.addEventListener("click", function () {
+  modal.classList.remove("open-modal");
 });
